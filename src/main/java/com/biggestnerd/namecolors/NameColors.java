@@ -86,84 +86,84 @@ public class NameColors extends ACivMod implements Listener {
 	public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
 		if(sender instanceof Player) {
 			ClickableInventory inv = new ClickableInventory(InventoryType.CHEST, "Change Name Color");
-			ItemStack redWool = new ItemStack(Material.WOOL, 1, (short)14);
+			ItemStack redWool = new ItemStack(Material.RED_WOOL, 1);
 			ISUtils.setName(redWool, ChatColor.DARK_RED + "Red");
 			inv.addSlot(new Clickable(redWool) {
 				public void clicked(Player player) {
 					updatePlayerName(player, ChatColor.DARK_RED);
 				}
 			});
-			ItemStack greenWool = new ItemStack(Material.WOOL, 1, (short)13);
+			ItemStack greenWool = new ItemStack(Material.GREEN_WOOL, 1);
 			ISUtils.setName(greenWool, ChatColor.DARK_GREEN + "Dark Green");
 			inv.addSlot(new Clickable(greenWool) {
 				public void clicked(Player player) {
 					updatePlayerName(player, ChatColor.DARK_GREEN);
 				}
 			});
-			ItemStack darkblueWool = new ItemStack(Material.WOOL, 1, (short)11);
+			ItemStack darkblueWool = new ItemStack(Material.BLUE_WOOL, 1);
 			ISUtils.setName(darkblueWool, ChatColor.BLUE + "Dark Blue");
 			inv.addSlot(new Clickable(darkblueWool) {
 				public void clicked(Player player) {
 					updatePlayerName(player, ChatColor.BLUE);
 				}
 			});
-			ItemStack purpleWool = new ItemStack(Material.WOOL, 1, (short)10);
+			ItemStack purpleWool = new ItemStack(Material.PURPLE_WOOL, 1);
 			ISUtils.setName(purpleWool, ChatColor.DARK_PURPLE + "Purple");
 			inv.addSlot(new Clickable(purpleWool) {
 				public void clicked(Player player) {
 					updatePlayerName(player, ChatColor.DARK_PURPLE);
 				}
 			});
-			ItemStack tealWool = new ItemStack(Material.WOOL, 1, (short)9);
+			ItemStack tealWool = new ItemStack(Material.CYAN_WOOL, 1);
 			ISUtils.setName(tealWool, ChatColor.DARK_AQUA + "Teal");
 			inv.addSlot(new Clickable(tealWool) {
 				public void clicked(Player player) {
 					updatePlayerName(player, ChatColor.DARK_AQUA);
 				}
 			});
-			ItemStack lightGrayWool = new ItemStack(Material.WOOL, 1, (short)8);
+			ItemStack lightGrayWool = new ItemStack(Material.LIGHT_GRAY_WOOL, 1);
 			ISUtils.setName(lightGrayWool, ChatColor.GRAY + "Gray");
 			inv.addSlot(new Clickable(lightGrayWool) {
 				public void clicked(Player player) {
 					updatePlayerName(player, ChatColor.GRAY);
 				}
 			});
-			ItemStack darkGrayWool = new ItemStack(Material.WOOL, 1, (short)7);
+			ItemStack darkGrayWool = new ItemStack(Material.GRAY_WOOL, 1);
 			ISUtils.setName(darkGrayWool, ChatColor.DARK_GRAY + "Dark Gray");
 			inv.addSlot(new Clickable(darkGrayWool) {
 				public void clicked(Player player) {
 					updatePlayerName(player, ChatColor.DARK_GRAY);
 				}
 			});
-			ItemStack limeWool = new ItemStack(Material.WOOL, 1, (short)5);
+			ItemStack limeWool = new ItemStack(Material.LIME_WOOL, 1);
 			ISUtils.setName(limeWool, ChatColor.GREEN + "Light Green");
 			inv.addSlot(new Clickable(limeWool) {
 				public void clicked(Player player) {
 					updatePlayerName(player, ChatColor.GREEN);
 				}
 			});
-			ItemStack yellowWool = new ItemStack(Material.WOOL, 1, (short)4);
+			ItemStack yellowWool = new ItemStack(Material.YELLOW_WOOL, 1);
 			ISUtils.setName(yellowWool, ChatColor.YELLOW + "Yellow");
 			inv.addSlot(new Clickable(yellowWool) {
 				public void clicked(Player player) {
 					updatePlayerName(player, ChatColor.YELLOW);
 				}
 			});
-			ItemStack lightBlueWool = new ItemStack(Material.WOOL, 1, (short)3);
+			ItemStack lightBlueWool = new ItemStack(Material.LIGHT_BLUE_WOOL, 1);
 			ISUtils.setName(lightBlueWool, ChatColor.AQUA + "Light Blue");
 			inv.addSlot(new Clickable(lightBlueWool) {
 				public void clicked(Player player) {
 					updatePlayerName(player, ChatColor.AQUA);
 				}
 			});
-			ItemStack GoldWool = new ItemStack(Material.WOOL, 1, (short)1);
+			ItemStack GoldWool = new ItemStack(Material.ORANGE_WOOL, 1);
 			ISUtils.setName(GoldWool, ChatColor.GOLD + "Gold");
 			inv.addSlot(new Clickable(GoldWool) {
 				public void clicked(Player player) {
 					updatePlayerName(player, ChatColor.GOLD);
 				}
 			});
-			ItemStack pinkWool = new ItemStack(Material.WOOL, 1, (short)2);
+			ItemStack pinkWool = new ItemStack(Material.MAGENTA_WOOL, 1);
 			ISUtils.setName(pinkWool, ChatColor.LIGHT_PURPLE + "Pink");
 			inv.addSlot(new Clickable(pinkWool) {
 				public void clicked(Player player) {
@@ -171,7 +171,7 @@ public class NameColors extends ACivMod implements Listener {
 				}
 			});
 			if(sender.hasPermission("namecolor.rainbow")) {
-				ItemStack brownWool = new ItemStack(Material.WOOL, 1, (short)12);
+				ItemStack brownWool = new ItemStack(Material.BROWN_WOOL, 1);
 				ISUtils.setName(brownWool, ChatColor.LIGHT_PURPLE + "Rainbow");
 				inv.addSlot(new Clickable(brownWool) {
 					public void clicked(Player player) {
@@ -184,7 +184,7 @@ public class NameColors extends ACivMod implements Listener {
 					}
 				});
 			}
-			ItemStack whiteWool = new ItemStack(Material.WOOL, 1);
+			ItemStack whiteWool = new ItemStack(Material.WHITE_WOOL, 1);
 			ISUtils.setName(whiteWool, "Reset");
 			inv.addSlot(new Clickable(whiteWool) {
 				public void clicked(Player player) {
